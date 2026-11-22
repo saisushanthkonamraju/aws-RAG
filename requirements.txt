@@ -1,0 +1,20 @@
+# Core LangChain stack (verified together on Python 3.14 / Nov 2026)
+langchain==1.5.2
+langchain-core==1.8.3
+langchain-community==0.4.2
+langchain-text-splitters==1.1.3
+langchain-chroma==1.1.0
+langchain-huggingface==1.2.3
+langchain-google-genai==4.5.1
+langchain-classic==1.0.8
+
+# Local embeddings + vector store
+sentence-transformers==6.3.0
+chromadb==1.5.9
+
+# PDF parsing (PyMuPDF for text/fonts, pypdf for the outline)
+pymupdf==2.1
+pypdf==6.21.4
+
+# Config
+python-dotenv==1.2.4

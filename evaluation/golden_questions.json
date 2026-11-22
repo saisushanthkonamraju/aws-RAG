@@ -1,0 +1,106 @@
+{
+  "description": "Retrieval golden set. expected_sections are exact section_path values from data/processed/sections.json; a question is a hit when any of them appears in the top-k. Unanswerable questions are priced/quotas/how-to requests the whitepaper does not cover; they are excluded from ranking metrics and reported separately.",
+  "questions": [
+    {
+      "id": "q01",
+      "question": "What is AWS Lambda?",
+      "expected_sections": ["Compute > AWS Lambda"],
+      "answerable": true
+    },
+    {
+      "id": "q02",
+      "question": "What is Amazon S3 used for?",
+      "expected_sections": ["Storage > Amazon Simple Storage Service"],
+      "answerable": true
+    },
+    {
+      "id": "q03",
+      "question": "What is Amazon EC2?",
+      "expected_sections": ["Compute > Amazon EC2"],
+      "match": "subtree",
+      "answerable": true
+    },
+    {
+      "id": "q04",
+      "question": "How is Kinesis Data Streams different from Amazon Data Firehose?",
+      "expected_sections": [
+        "Analytics > Amazon Kinesis Data Streams",
+        "Analytics > Amazon Data Firehose"
+      ],
+      "answerable": true
+    },
+    {
+      "id": "q05",
+      "question": "Which services are in the Analytics category?",
+      "expected_sections": ["Analytics"],
+      "answerable": true
+    },
+    {
+      "id": "q06",
+      "question": "What is Amazon DynamoDB?",
+      "expected_sections": ["Databases > Amazon DynamoDB"],
+      "answerable": true
+    },
+    {
+      "id": "q07",
+      "question": "What does Amazon CloudFront do?",
+      "expected_sections": ["Networking and content delivery > Amazon CloudFront"],
+      "answerable": true
+    },
+    {
+      "id": "q08",
+      "question": "What is AWS Glue?",
+      "expected_sections": ["Analytics > AWS Glue"],
+      "answerable": true
+    },
+    {
+      "id": "q09",
+      "question": "What is Amazon SageMaker AI?",
+      "expected_sections": ["Machine Learning (ML) and Artificial Intelligence (AI) > Amazon SageMaker AI"],
+      "match": "subtree",
+      "answerable": true
+    },
+    {
+      "id": "q10",
+      "question": "What are the six advantages of cloud computing?",
+      "expected_sections": ["Six advantages of cloud computing"],
+      "answerable": true
+    },
+    {
+      "id": "q11",
+      "question": "What is AWS Identity and Access Management used for?",
+      "expected_sections": ["Security, identity, and compliance > AWS Identity and Access Management"],
+      "answerable": true
+    },
+    {
+      "id": "q12",
+      "question": "What is Amazon Relational Database Service?",
+      "expected_sections": ["Databases > Amazon Relational Database Service"],
+      "answerable": true
+    },
+    {
+      "id": "q13",
+      "question": "Which AWS service monitors resources and applications?",
+      "expected_sections": ["Management and governance > Amazon CloudWatch"],
+      "answerable": true
+    },
+    {
+      "id": "q14",
+      "question": "How much does Lambda cost per request?",
+      "expected_sections": [],
+      "answerable": false
+    },
+    {
+      "id": "q15",
+      "question": "What is the default concurrency quota for AWS Lambda?",
+      "expected_sections": [],
+      "answerable": false
+    },
+    {
+      "id": "q16",
+      "question": "How do I create a VPC step by step in the console?",
+      "expected_sections": [],
+      "answerable": false
+    }
+  ]
+}
